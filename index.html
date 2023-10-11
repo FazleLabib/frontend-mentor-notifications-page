@@ -3,49 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Notifications page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  Notifications 3
+  <main>
+    <div class="card">
+      <div class="card-item" id="header">
+        <div class="notification-header">
+          <h1 id="notif-heading">Notifications</h1>
+          <span id="counter">3</span>
+        </div>
+        <p id="mark-all">Mark all as read</p>
+      </div>
 
-  Mark all as read
+      <div class="card-item" id="sections">
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+        <section class="section-item">
+          <div class="display-pic">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="">
+          </div>
+          <div class="content">
+            <div class="content-heading">
+              <div class="heading">
+                <h2 class="username">Mark Webber</h2>
+                <h3 class="action">reacted to your recent post</h3>
+                <h4 class="title">My first tournament today!</h4>
+                <span class="notif-dot"></span>
+              </div>
+              <p class="time">1m ago</p>
+            </div>
+          </div>
+        </section>
 
-  Angela Gray followed you
-  5m ago
+        <section class="section-item">
+          <div class="display-pic">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="">
+          </div>
+          <div class="content">
+            <div class="content-heading">
+              <div class="heading">
+                <h2 class="username">Angela Gray</h2>
+                <h3 class="action">followed you</h3>
+                <span class="notif-dot"></span>
+              </div>
+              <p class="time">5m ago</p>
+            </div>
+          </div>
+        </section>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+        <section class="section-item">
+          <div class="display-pic">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+          </div>
+          <div class="content">
+            <div class="content-heading">
+              <div class="heading">
+                <h2 class="username">Jacob Thompson</h2>
+                <h3 class="action">has joined your group</h3>
+                <h4 class="title">Chess Club</h4>
+                <span class="notif-dot"></span>
+              </div>
+              <p class="time">1 day ago</p>
+            </div>
+          </div>
+        </section>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+        <section class="section-item">
+          <div class="display-pic">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          </div>
+          <div class="content">
+            <div class="content-heading">
+              <div class="heading">
+                <h2 class="username">Rizky Hasanuddin</h2>
+                <h3 class="action">sent you a private message</h3>
+                <span class="notif-dot"></span>
+              </div>
+              <p class="time">5 days ago</p>
+            </div>
+            <div class="message">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </div>
+          </div>
+        </section>
+         
+        5
+        <section class="section-item">
+          <div class="display-pic">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+          </div>
+          <div class="content">
+            <div class="content-heading">
+              <div class="heading">
+                <h2 class="username">Kimberly Smith</h2>
+                <h3 class="action">commented on your picture</h3>
+                <span class="notif-dot"></span>
+              </div>
+              <p class="time">1 week ago</p>
+            </div>
+            <div class="picture">
+              <img src="./assets/images/image-chess.webp" alt="Image of a person playing chess.">
+            </div>
+          </div>
+        </section>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+        <section class="section-item">
+          <div class="display-pic">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+          </div>
+          <div class="content">
+            <div class="content-heading">
+              <div class="heading">
+                <h2 class="username">Nathan Peterson</h2>
+                <h3 class="action">reacted to your recent post</h3>
+                <h4 class="title">5 end-game strategies to increase your win rate</h4>
+                <span class="notif-dot"></span>
+              </div>
+              <p class="time">2 weeks ago</p>
+            </div>
+          </div>
+        </section>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+        <section class="section-item">
+          <div class="display-pic">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="">
+          </div>
+          <div class="content">
+            <div class="content-heading">
+              <div class="heading">
+                <h2 class="username">Anna Kim</h2>
+                <h3 class="action">left the group</h3>
+                <h4 class="title">Chess Club</h4>
+                <span class="notif-dot"></span>
+              </div>
+              <p class="time">2 weeks ago</p>
+            </div>
+          </div>
+        </section>
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
+      </div>
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/FazleLabib">Fazle Labib</a>.
+    </div>
+  </footer>
 </body>
 </html>
