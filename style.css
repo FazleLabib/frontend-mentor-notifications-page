@@ -139,7 +139,7 @@ img {
     gap: 0.45rem;
 }
 
-.heading::after {
+.unread-heading::after {
     content: "";
     display: inline-block;
     width: 0.5rem;
@@ -172,6 +172,7 @@ img {
 }
 
 .unread {
+    cursor: pointer;
     border-radius: 0.5rem;
     background-color: var(--bg);
 }
